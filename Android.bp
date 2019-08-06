@@ -1,0 +1,10 @@
+cc_test {
+    name: "bfuzz",
+    srcs: ["src/main.cpp"],
+    shared_libs: [
+        "libbinder",
+        "libutils",
+    ],
+
+}
+
