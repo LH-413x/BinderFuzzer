@@ -5,6 +5,15 @@ cc_test {
         "libbinder",
         "libutils",
     ],
+}
 
+cc_library{
+  name: "lib-BinderInterfaceFuzzPlug",
+  srcs:  ["interface-tester/interface_tester.cpp"],
+  shared_libs: [
+    "libbinder",
+    "liblog",
+    "libutils",
+  ]
 }
 
